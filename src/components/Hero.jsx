@@ -1,5 +1,4 @@
 import React from "react";
-import profilepic from "../assets/profpic.png";
 import { TypeAnimation } from "react-type-animation";
 import ShinyEffect from "./ShinyEffect";
 import {
@@ -10,12 +9,17 @@ import {
 } from "react-icons/ai";
 import {
   DiCss3,
+  DiExtjs,
   DiHtml5,
+  DiJava,
   DiJavascript1,
   DiNodejsSmall,
+  DiPython,
   DiReact,
 } from "react-icons/di";
 import { motion } from "framer-motion";
+import { SiVuedotjs } from 'react-icons/si';
+
 
 
 const Hero = () => {
@@ -30,11 +34,9 @@ const Hero = () => {
             >
                 <TypeAnimation
                     sequence={[
-                        "Fullstack Dev",
+                        "Junior Fullstack Dev",
                         1000,
-                        "Webdesigner",
-                        1000,
-                        "Consultant",
+                        "Junior Backend Dev",
                         1000
                     ]}
                     speed={50}
@@ -50,7 +52,7 @@ const Hero = () => {
                 className="text-gray-200 md:text-7xl text-5xl tracking-tight mb-4"
                 >
                     HEY, I AM <br/>
-                    <span className="text-purple-500">JOHN DOE</span>
+                    <span className="text-purple-500">Tempest</span>
                 </motion.p>
 
                 <motion.p
@@ -60,7 +62,7 @@ const Hero = () => {
                 transition={{ duration: 1, delay: 1 }}
                 className="text-gray-300 max-w-[300px] md:max-w-[500px] md:text-2xl text-lg mb-6"
                 >
-                    I am a passionate fullstack developer with over 5 years of experience.
+                    I am a passionate fullstack developer with over 1 year of experience.
                 </motion.p>
 
                 <motion.div
@@ -70,32 +72,36 @@ const Hero = () => {
                 transition={{ duration: 1, delay: 1.5 }}
                 className="flex flex-row items-center gap-6 my-4 md:mb-0"
                 >
-                    <motion.button whileHover={{ scale: 1.05, boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.3)" }}
-                        className="z-10 cursor-pointer font-bold text-gray-200 md:w-auto p-4 border
-                                     border-purple-400 rounded-xl"     
+                    <motion.a 
+                        whileHover={{ scale: 1.05, boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.3)" }}
+                        href="https://ln5.sync.com/dl/4c10642b0/f8tjmgka-446t2j4b-dv9zq3e9-99a9a3c6"
+                        download="Your_CV.pdf"
+                        className="z-10 cursor-pointer font-bold text-gray-200 md:w-auto p-4 border border-purple-400 rounded-xl"
                     >
                         Download CV
-                    </motion.button>
+                    </motion.a>
+
 
                     <div className="flex gap-6 flex-row text-4xl md:text-6xl text-purple-400 z-20">
-                        <motion.a whileHover={{ scale: 1.2 }} href="#">
+                        <motion.a whileHover={{ scale: 1.2 }} href="https://github.com/SHEINMINNOOJDEV">
                             <AiOutlineGithub/>
                         </motion.a>
 
-                        <motion.a whileHover={{ scale: 1.2 }} href="#">
+                        <motion.a whileHover={{ scale: 1.2 }} href="https://www.linkedin.com/in/sheinminnoo/">
                             <AiOutlineLinkedin/>
                         </motion.a>
 
-                        <motion.a whileHover={{ scale: 1.2 }} href="#">
+                        <motion.a whileHover={{ scale: 1.2 }} href="https://www.instagram.com/_tempestoii/">
                             <AiOutlineInstagram/>
                         </motion.a>
                     </div>
+
                 </motion.div>
             </motion.div>
 
 
             <motion.img 
-                src={profilepic}
+                src="https://res.cloudinary.com/da00l5rsb/image/upload/v1720546794/sheinminoo.pf.webp"
                 className="w-[300px] md:w-[450px]"
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -111,10 +117,12 @@ const Hero = () => {
             transition={{ duration: 1, delay: 2 }}
             className="flex flex-row text-7xl px-12 md:px-0 w-full justify-center items-center py-24"
         >
-            <p className="text-gray-200 mr-6">My Tech Stack</p>
+            <p className="text-gray-200 mr-6">Techs</p>
             <DiHtml5 className="text-orange-600 mx-2" />
             <DiCss3 className="text-blue-600 mx-2" />
             <DiJavascript1 className="text-yellow-500 mx-2" />
+            <DiPython className="text-yellow-500 mx-2"/>
+            <DiJava className="text-yellow-500 mx-2" />
             <DiReact className="text-blue-500 mx-2" />
             <DiNodejsSmall className="text-green-500 mx-2" />
 

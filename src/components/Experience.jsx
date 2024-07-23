@@ -3,28 +3,12 @@ import { motion } from 'framer-motion'
 import Reveal from './Reveal'
 
 const experiences = [
-    {
-        company: 'First Company',
-        period: '2020 - Present',
-        description: 'Description of your experience in this company.',
-      },
-      {
-        company: 'Second Company',
-        period: '2020 - Present',
-        description: 'Description of your experience in this company.',
-      },
-      {
-        company: 'Third Company',
-        period: '2020 - Present',
-        description: 'Description of your experience in this company.',
-      },
-      {
-        company: 'Fourth Company',
-        period: '2020 - Present',
-        description: 'Description of your experience in this company.',
-      },
-]
-
+  {
+      company: 'Kanbawza Bank',
+      period: '2022 - 2023',
+      description: 'Junior Software Developer Internship. As part of this project, I am responsible for designing and implementing the user interface, integrating payment gateways for both cash and electronic transactions, implementing security measures to protect sensitive data, and conducting thorough testing to ensure the system\'s functionality and performance.',
+  },
+];
 
 
 const Experience = () => {

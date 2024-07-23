@@ -1,58 +1,28 @@
 import React from 'react';
 import project1 from "../assets/project1.png"
 import project2 from "../assets/project2.png"
-import project4 from "../assets/project4.png"
-import project5 from "../assets/project5.png"
-import project6 from "../assets/project6.png"
 import { AiFillGithub, AiOutlineGithub } from 'react-icons/ai'
 import Reveal from './Reveal';
 
 const projects = [
-    {
-      img: project1,
-      title: "Project #1",
-      description: "UI for frontend development using React.",
-      links: {
-        site: "#",
-        github: "#",
-      },
+  {
+    img: project1,
+    title: "Manga_Hub",
+    description: "A full-stack web application using the MERN stack. Provides a platform for manga enthusiasts to explore and manage their manga collections.",
+    links: {
+      site: "https://tempestmanga.online/", 
+      github: "https://github.com/SHEINMINNOOJDEV/tempestmangapro", 
+    },
     },
     {
       img: project2,
-      title: "Project #2",
-      description: "A fullstack application built with Node.js and MongoDB.",
+      title: "Event Organization App",
+      description: "Build an event organization web app like Eventbrite or Meetup with authentication, event management, search, filtering, categories, checkout, and payments using Next.js 14, Tailwind CSS, Shadcn, React Hook Form, Zod, Uploadthing, React-Datepicker, Mongoose, Clerk, and Stripe.",
       links: {
-        site: "#",
-        github: "#",
+        site: "https://event-platform-sigma-gold.vercel.app/", 
+        github: "https://github.com/SHEINMINNOOJDEV/event_platform", 
       },
-    },
-    {
-      img: project4,
-      title: "Project #3",
-      description: "An e-commerce platform with various features.",
-      links: {
-        site: "#",
-        github: "#",
-      },
-    },
-    {
-      img: project5,
-      title: "Project #4",
-      description: "A mobile-friendly application using React Native.",
-      links: {
-        site: "#",
-        github: "#",
-      },
-    },
-    {
-      img: project6,
-      title: "Project #5",
-      description: "A data visualization project using D3.js and other libraries.",
-      links: {
-        site: "#",
-        github: "#",
-      },
-    },
+    }
   ]
 
 const Portfolio = () => {
