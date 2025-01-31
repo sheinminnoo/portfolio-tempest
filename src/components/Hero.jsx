@@ -19,6 +19,7 @@ import {
 } from "react-icons/di";
 import { motion } from "framer-motion";
 import { SiVuedotjs } from 'react-icons/si';
+import DownloadLink from "react-download-link";
 
 
 
@@ -72,18 +73,21 @@ const Hero = () => {
                 transition={{ duration: 1, delay: 1.5 }}
                 className="flex flex-row items-center gap-6 my-4 md:mb-0"
                 >
-                    <motion.a 
-                        whileHover={{ scale: 1.05, boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.3)" }}
-                        href="https://ln5.sync.com/dl/4c10642b0/f8tjmgka-446t2j4b-dv9zq3e9-99a9a3c6"
-                        download="Your_CV.pdf"
-                        className="z-10 cursor-pointer font-bold text-gray-200 md:w-auto p-4 border border-purple-400 rounded-xl"
-                    >
-                        Download CV
-                    </motion.a>
+;
+
+<motion.a 
+    whileHover={{ scale: 1.05, boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.3)" }}
+    href="https://www.dropbox.com/scl/fi/e68gzf8ecsvhkz108gvvy/SHEINMINN_OO_CV.pdf.pdf?rlkey=v6qbe9uixjyus6rwzd0h1o2pl&st=j4snlrbi&dl=0"
+    download="Your_CV.pdf"
+    className="z-10 cursor-pointer font-bold text-gray-200 md:w-auto p-4 border border-purple-400 rounded-xl"
+>
+    Download CV
+</motion.a>
+
 
 
                     <div className="flex gap-6 flex-row text-4xl md:text-6xl text-purple-400 z-20">
-                        <motion.a whileHover={{ scale: 1.2 }} href="https://github.com/SHEINMINNOOJDEV">
+                        <motion.a whileHover={{ scale: 1.2 }} href="https://github.com/sheinminnoo">
                             <AiOutlineGithub/>
                         </motion.a>
 
@@ -101,7 +105,7 @@ const Hero = () => {
 
 
             <motion.img 
-                src="https://res.cloudinary.com/da00l5rsb/image/upload/v1720546794/sheinminoo.pf.webp"
+                src="https://res.cloudinary.com/da00l5rsb/image/upload/v1738321232/photo_2025-01-31_18-00-20_eferco.jpg"
                 className="w-[300px] md:w-[450px]"
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
